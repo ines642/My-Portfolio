@@ -1,0 +1,9 @@
+//hero
+Hello,  
+I'm Ines,  
+Frontend developer
+Join Me on a Tour of My Projects
+
+
+//random txt
+Lorem ipsum dolor sit amet consectetur. In ut quam sem nunc. Sed elit volutpat dui ultrices enim eget cursus. Dictumst dictum sit amet sed felis purus. Amet non mi pharetra.
