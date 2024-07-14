@@ -24,6 +24,36 @@ document.addEventListener("mouseout", () => {
     cursor.style.display = "none";
 });
 
+/*txt typing animation*/
+let ines ="Ines"
+let text = "Hello, I'm "+ ines +" frontend developer";
+const typingTextElement = document.querySelector(".hey");
+const targetText = "Ines";
+const typingSpeed = 100; // Speed of typing in milliseconds
+
+let index = 0;
+let textIndex = 0;
+
+function type() {
+    if (index < text.length) {
+        typingTextElement.innerHTML += text.charAt(index);
+        index++;
+        if (text.substring(index, index + targetText.length) === targetText) {
+          typingTextElement.innerHTML += '<span class="blue">Ines</span>';
+          index += targetText.length;
+      } else {
+          typingTextElement.innerHTML += text.charAt(index);
+          index++;
+      }
+        setTimeout(type, 100); // Adjust the speed by changing the timeout duration
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    type();
+});
+
+
 /*card lazy loading*/
 const options = {
     root: null, // Use the viewport as the root
