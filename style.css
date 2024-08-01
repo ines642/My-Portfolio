@@ -35,13 +35,25 @@ header{
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    
+    
 
 }
 .logo{
-    width: 60px;
-    height:60px;
-    border-radius: 30px;
-    background: var(--style);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.logo img{
+    cursor: pointer;
+    width: 8em;
+    height:8em;
+    border-radius: 50%;
+    
 }
 nav{
     width:70% ;
@@ -51,6 +63,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
     
 }
 a , a:link , a:visited{
@@ -151,6 +165,7 @@ main >.hero >div:nth-child(1){
     border-right: 2px solid;
     padding-right:5px ;
     animation: caret 0.6s steps(5) infinite;
+    
 }
 @keyframes caret {
     50% {
